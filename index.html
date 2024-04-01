@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Workbench&display=swap');
+        </style>
+    <title>holey moley</title>
+   </head>
+   <body>
+    <div>
+        <div class="background"></div>
+        <div class="gif-overlay">
+            <div class="centerText" id="centerText" hidden>
+                <p id="centerText" class="orbitron">you just lost the game</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:none">
+        <audio src="lesliKaruchka.mp3" loop autoplay="true" controls="true"></audio> 
+     </div>
+    
+    <script>
+        setTimeout(function() {
+            document.getElementById('centerText').style.display = 'block';
+        }, 5000);
+    </script>
+
+   </body>
+</html>
